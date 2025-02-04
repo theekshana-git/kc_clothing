@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../../../../css/product.css" />
+    <link rel="stylesheet" href="../../../../css/navbar.css" />
+    <link rel="stylesheet" href="../../../../css/footer.css"/>
+    <link rel="stylesheet" href="../../../../css/signin.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Logo -->
+        <a class="navbar-brand ms-2" href="../../../../index.html">
+          <img src="../../../../images/removed-bg-logo.png" alt="KC Clothing">
+        </a>
+  
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <!-- Search Bar for Mobile -->
+          <div class="d-lg-none mb-2">
+            <input type="text" class="form-control search-bar" placeholder="Search" id="search">
+          </div>
+  
+          <!-- Categories (Left Side) -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../../../../includes/product/categories/menswear.html" data-category="Menswear" id="menswearDropdown" role="button" data-bs-toggle="collapse" data-bs-target="#menswearSubmenu" aria-expanded="false">
+                Menswear
+              </a>
+              <ul class="dropdown-menu collapse" id="menswearSubmenu">
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/men/shirts.html" data-category="Menswear > Shirts">Shirts</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/men/t-shirts.html" data-category="Menswear > T-Shirts">T-Shirts</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/men/pants.html" data-category="Menswear > Pants">Pants</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/men/shorts.html" data-category="Menswear > Shorts">Shorts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../../../../includes/product/categories/ladieswear.html" data-category="Ladieswear" id="ladieswearDropdown" role="button" data-bs-toggle="collapse" data-bs-target="#ladieswearSubmenu" aria-expanded="false">
+                Ladieswear
+              </a>
+              <ul class="dropdown-menu collapse" id="ladieswearSubmenu">
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/women/blouses.html" data-category="Ladieswear > Blouses">Blouses</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/women/party-frocks.html" data-category="Ladieswear > Party Frocks">Party Frocks</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/women/saree-jackets.html" data-category="Ladieswear > Saree Jackets">Saree Jackets</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/women/ethnic-wear.html" data-category="Ladieswear > Abhaya/Kurtha/Shalwar">Abhaya/Kurtha/Shalwar</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/women/skirts-pants.html" data-category="Ladieswear > Skirts/Pants">Skirts/Pants</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/women/shorts.html" data-category="Ladieswear > Shorts">Shorts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../../../../includes/product/categories/kidswear.html" data-category="Kidswear" id="kidswearDropdown" role="button" data-bs-toggle="collapse" data-bs-target="#kidswearSubmenu" aria-expanded="false">
+                Kidswear
+              </a>
+              <ul class="dropdown-menu collapse" id="kidswearSubmenu">
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/kidswear/boys.html" data-category="Kidswear > Boys Wear">Boys Wear</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/kidswear/girls.html" data-category="Kidswear > Girls Wear">Girls Wear</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/kidswear/school-uniforms.html" data-category="Kidswear > School Uniforms">School Uniforms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../../../../includes/product/categories/accessories.html" data-category="Accessories" id="accessoriesDropdown" role="button" data-bs-toggle="collapse" data-bs-target="#accessoriesSubmenu" aria-expanded="false">
+                Accessories
+              </a>
+              <ul class="dropdown-menu collapse" id="accessoriesSubmenu">
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/accessories/ladies-handbags.html" data-category="Accessories > Ladies Handbags">Ladies Handbags</a></li>
+                <li><a class="dropdown-item" href="../../../../includes/product/sub-categories/accessories/ladies-wallets.html" data-category="Accessories > Ladies Wallets">Ladies Wallets</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../includes/product/categories/curtains.html" data-category="Curtains">Curtains</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</a>
+            </li>
+          </ul>
+  
+          <!-- Search, Sign In, Cart (Right Side for Desktop) -->
+          <div class="d-flex align-items-center d-none d-lg-flex">
+            <input type="text" class="form-control me-2 search-bar" placeholder="Search" id="search">
+            <a href="#" class="me-3" data-bs-toggle="modal" data-bs-target="#signinModal"><i class="fas fa-user"></i> Sign In</a>
+            <a href="#" id="cart" data-bs-toggle="modal" data-bs-target="#cartModal"><i class="fas fa-shopping-cart"></i> Cart</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--header and description section-->
+    <div class="content">
+      <h2 class="product-path">Saree Jackets</h2>
+      <p class="product-description">
+        Welcome to KC Clothing, your ultimate destination for stylish and high-quality fashion in Sri Lanka.
+        Our collection features a wide range of products designed to suit every taste and occasion.
+        Whether you're looking for trendy menswear, elegant ladieswear, adorable kidswear, or chic accessories, 
+        we have something for everyone.
+      </p>
+
+        <div class="filter-section">
+          <select id="categoryFilter">
+              <option  value="all">Default sorting</option>
+              <option  value="high-to-low">Sort by price: high to low</option>
+              <option  value="low-to-high">Sort by Price: low to high</option>
+          </select>
+      </div>
+
+      <!--product cards container-->
+      <div class="product-container">
+        <!--Grid layout for displaying products-->
+        <div class="product-grid">
+          <!--Product cards-->
+          <!--for the sorting algorithm to work theses clasees must be added(data-cat,data-price ) and  they must be equal to the content displayed on the website-->
+          
+
+        </div>
+        <!--ending of product grid-->
+      </div>
+      <!--Ending of product container-->
+
+      <!--Pagination Controls-->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pagination-controls">
+          <!-- Pagination items will be dynamically inserted here -->
+        </ul>
+      </nav>
+
+    </div>
+   <!-- Sign In Modal -->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="form">
+          <div class="input-container">
+            <input placeholder="Enter email" type="email">
+          </div>
+          <div class="input-container">
+            <input placeholder="Enter password" type="password">
+          </div>
+          <button class="submit" type="submit">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th class="text-center">Price</th>
+              <th class="text-center">Total</th>
+              <th> </th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+          </tbody>
+          <tfoot id="cart-summary" style="display: none;">
+            <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td><h5>Subtotal</h5></td>
+              <td class="text-right"><h5><strong id="subtotal">$0.00</strong></h5></td>
+            </tr>
+            <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td><h5>Estimated shipping</h5></td>
+              <td class="text-right"><h5><strong id="shipping">$0.00</strong></h5></td>
+            </tr>
+            <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td><h3>Total</h3></td>
+              <td class="text-right"><h3><strong id="total">$0.00</strong></h3></td>
+            </tr>
+            <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td>
+                <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                </button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-success">
+                  Checkout <span class="glyphicon glyphicon-play"></span>
+                </button>
+              </td>
+            </tr>
+          </tfoot>
+          <tbody id="empty-cart-message">
+            <tr>
+              <td colspan="5" class="text-center">Your cart is empty.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer text-center mt-auto">
+  <!-- Grid container -->
+  <div class="container">
+    <!-- Section: Links -->
+    <section class="mt-3">
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-3">
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="section-title">
+            <a href="../../../about.html" class="text-dark">About us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="section-title">
+            <a href="../../../contact.html" class="text-dark">Contact us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="section-title">
+            <a href="../../product.html" class="text-dark">Products</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="section-title">
+            <a href="../../../delivery.html" class="text-dark">Delivery Info</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+    <hr class="my-4" />
+
+    <!-- Section: Logo and Contact Info -->
+    <section class="mb-3">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-4 text-center">
+          <img src="../../../../images/removed-bg-logo.png" alt="KC Clothing" class="logo">
+        </div>
+        <div class="col-lg-4 contact-info">
+          <p><i class="fas fa-phone"></i> +123 456 7890</p>
+          <p><i class="fas fa-phone"></i> +098 765 4321</p>
+          <p><i class="fas fa-envelope"></i> info@kcclothing.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Logo and Contact Info -->
+
+    <hr class="my-4" />
+
+    <!-- Copyright -->
+    <div class="text-center copyright">
+     Copyright © 2025 KC Clothing, All Rights Reserved 
+    </div>
+    <!-- Copyright -->
+  </div>
+  <!-- Grid container -->
+</footer>
+<!-- Footer -->
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../../js/navbar.js"></script>
+    <script src="../../../../js/sareejackets.js"></script>
+    <script src="../../../../js/cart.js"></script>
+  </body>
+</html>

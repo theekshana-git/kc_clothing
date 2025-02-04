@@ -1,0 +1,139 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-link {
+  text-decoration: none;
+}
+
+.product-path {
+  font-size: 60px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 10px;
+  
+}
+
+.product-description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.filter-section {
+  padding-left: 20px;
+}
+
+#categoryFilter {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#categoryFilter option {
+  font-weight: bold;
+  color: #555;
+}
+
+#categoryFilter option:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 2000px;
+}
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+.product-card {
+  overflow: hidden;
+  text-align: start;
+  background-color: rgb(255, 255, 255);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.image-container:hover {
+  display: block;
+}
+
+.product-class {
+  margin: 2px;
+  color: gray;
+  font-size: 14px;
+}
+
+.product-nametag {
+  margin: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.price-tag {
+  margin: 2px;
+  color: #555;
+}
+
+
+.pagination .page-item .page-link {
+  color: black !important;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: forestgreen !important;
+  color: white !important;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: forestgreen !important;
+  color: white !important;
+  border-color: forestgreen !important;
+}

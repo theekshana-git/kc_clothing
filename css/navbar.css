@@ -1,0 +1,201 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  height: 90px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
+  z-index: 1000; /* Ensure navbar is above other content */
+  padding: 0 15px; /* Add padding to the navbar */
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-brand img {
+  width: 95px;
+  height: auto;
+}
+
+/* Center logo in mobile version */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%; /* Increase width to 45% */
+    height: 100%;
+    background-color: #fff; /* Adjust the background color as needed */
+    z-index: 1050; /* Ensure it is above other elements */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    padding: 15px; /* Add padding to the navbar content */
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Move the toggler to the left */
+    transform: translateY(-50%); /* Center the toggler vertically within the navbar */
+    z-index: 1100; /* Ensure it is above the navbar-collapse */
+  }
+
+  /* Ensure search bar is properly positioned */
+  .search-bar {
+    width: 100%;
+    margin: 75px 15px 15px 15px; /* Adjust margin to move further down */
+  }
+}
+
+/* Navbar Links */
+.nav-link {
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #228B22; /* Forest Green color */
+}
+
+/* Remove text decoration for Sign In and Cart in desktop version */
+@media (min-width: 992px) {
+  #signin, #cart {
+    text-decoration: none;
+    color: #333;
+  }
+
+  #signin:hover, #cart:hover {
+    color: #228B22; /* Forest Green color */
+  }
+}
+
+/* Search Bar */
+.search-bar {
+  width: 200px;
+}
+
+.btn-search {
+  border: none;
+  background-color: #50C878;
+  color: white;
+}
+
+.btn-search:hover {
+  background-color: #45b568;
+}
+
+/* Hover Dropdown for Desktop Only */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* Add background color to navbar-collapse when expanded on mobile */
+.navbar-collapse {
+  background-color: #f8f9fa;
+  z-index: 1000; /* Ensure navbar-collapse is above other content */
+}
+
+/* Additional styles to ensure proper positioning of search bar */
+@media (max-width: 991.98px) {
+  .navbar-collapse .search-bar {
+    width: calc(100% - 30px); /* Adjust width to fit within padding */
+    margin: 75px 15px 15px 15px; /* Adjust margin to move further down */
+  }
+}
+
+/* Prevent body from scrolling when navbar is open */
+body.navbar-open {
+  overflow: hidden;
+}
+
+a.me-3 {
+  text-decoration: none;
+  color: #333; /* Change the color to match your theme */
+}
+
+a.me-3:hover {
+  color: #228B22; /* Forest green color for hover effect */
+}
+
+/* Cart Modal Styles */
+#cartModal .modal-dialog {
+  max-width: 800px !important; /* Increase the width of the cart */
+}
+
+#cartModal .modal-content {
+  border-radius: 10px !important; /* Make the cart a box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+#cartModal .modal-header {
+  border-bottom: none !important;
+}
+
+#cartModal .modal-title {
+  font-size: 1.5rem !important;
+}
+
+#cartModal .btn-close {
+  font-size: 1.2rem !important;
+}
+
+#cartModal .table {
+  margin-bottom: 0 !important;
+}
+
+#cartModal .table th,
+#cartModal .table td {
+  vertical-align: middle !important;
+}
+
+#cartModal .media-heading a {
+  text-decoration: none !important; /* Remove text decoration from product name */
+  font-size: 1rem !important; /* Reduce font size of product name */
+}
+
+#cartModal .media-heading a:hover {
+  text-decoration: underline !important;
+}
+
+#cartModal .form-control {
+  width: 60px !important;
+  display: inline-block !important;
+}
+
+#cartModal .btn-danger {
+  font-size: 0.9rem !important;
+}
+
+#cartModal .text-right h5,
+#cartModal .text-right h3 {
+  font-size: 1rem !important; /* Reduce font size of subtotal, total, and estimated shipping */
+}
+
+#cartModal .text-right h3 {
+  font-size: 1.2rem !important; /* Slightly larger font size for total */
+}
+
+#cartModal .modal-footer {
+  border-top: none !important;
+  justify-content: space-between !important;
+}
+
+#cartModal .btn-default,
+#cartModal .btn-success {
+  font-size: 1rem !important;
+}

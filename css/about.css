@@ -1,0 +1,54 @@
+
+body {
+    font-family:'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.banner {
+    
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgba(15, 15, 15, 0.75),rgba(15, 15, 15, 0.75)),url(../images/Copy\ of\ London.png);
+}
+
+.abt{
+    font-size: 50px;
+    font-weight: 20px;
+    margin-left: 350px;
+}
+
+
+
+
+.about-container {
+    max-width: 2500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+ 
+
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
